@@ -5,5 +5,9 @@ export interface DiaryEntry {
   content: string;
   mediaUrls?: string[];
   aiGeneratedMemories?: string[];
+  aiInsights?: {
+    summary?: string;
+    suggestions?: string[];
+  };
   type: 'milestone' | 'daily' | 'memory';
 } 
